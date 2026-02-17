@@ -1,6 +1,6 @@
 -- ud code..
 
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/sh4rkfn/open-source-hub/refs/heads/main/main.lua"))()
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
