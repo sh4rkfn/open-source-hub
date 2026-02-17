@@ -10,7 +10,7 @@ local LocalPlayer = Players.LocalPlayer
 -- Key System Configuration
 local KeySystemConfig = {
     Enabled = true,
-    KeyLink = "https://discord.gg/voxyuhub", -- Link to get the key
+    KeyLink = "https://discord.gg/fc4UPvqx4T", -- Link to get the key
     
     -- Web-based key validation (you can host your own key checker)
     ValidKeys = {
@@ -73,7 +73,7 @@ if KeySystemConfig.Enabled and not keyValid then
         MinimizeKey = nil
     })
     
-    local KeyTab = KeyWindow:AddTab({ Title = "🔑 Key System", Icon = "key" })
+    local KeyTab = KeyWindow:AddTab({ Title = "Key System", Icon = "key" })
     
     KeyTab:AddParagraph({
         Title = "Welcome to Voxy Hub!",
