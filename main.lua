@@ -138,7 +138,7 @@ if KeySystemConfig.Enabled and not keyValid then
                 KeyWindow:Destroy()
                 
                 -- Reload script to load main content
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/yourusername/voxyhub/main/main.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/sh4rkfn/open-source-hub/refs/heads/main/main.lua"))()
             else
                 Fluent:Notify({
                     Title = "Invalid Key",
