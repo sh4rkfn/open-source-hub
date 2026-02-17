@@ -1,11 +1,4 @@
--- lib fluent code
-
-
--- +CODE
- -- +UD
- --+TRUST ME BRO
-
-
+-- ud code..
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
@@ -68,7 +61,7 @@ if KeySystemConfig.Enabled and not keyValid then
         MinimizeKey = nil
     })
     
-    local KeyTab = KeyWindow:AddTab({ Title = "🔑 Key System", Icon = "key" })
+    local KeyTab = KeyWindow:AddTab({ Title = "Key System", Icon = "key" })
     
     KeyTab:AddParagraph({
         Title = "Welcome to Voxy Hub!",
@@ -120,8 +113,8 @@ if KeySystemConfig.Enabled and not keyValid then
                     Duration = 3
                 })
                 
-                warn("[VOXY HUB] ✓ Key validated")
-                warn("[VOXY HUB] ✓ User: " .. LocalPlayer.Name)
+                warn("[VOXY HUB] [SUCCESS] Key validated")
+                warn("[VOXY HUB] [SUCCESS] User: " .. LocalPlayer.Name)
                 
                 task.wait(1)
                 KeyWindow:Destroy()
@@ -282,11 +275,11 @@ local function Log(message, type)
     local fullMessage = string.format("%s [%s] %s", prefix, timestamp, message)
     
     if type == "success" then
-        warn("✓ " .. fullMessage)
+        warn("[SUCCESS] " .. fullMessage)
     elseif type == "error" then
-        warn("✗ " .. fullMessage)
+        warn("[ERROR] " .. fullMessage)
     elseif type == "info" then
-        warn("ℹ " .. fullMessage)
+        warn("[INFO] " .. fullMessage)
     else
         warn(fullMessage)
     end
@@ -490,10 +483,10 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Combat = Window:AddTab({ Title = "⚔️ Combat", Icon = "sword" }),
-    Player = Window:AddTab({ Title = "🏃 Player", Icon = "user" }),
-    Visual = Window:AddTab({ Title = "👁️ Visual", Icon = "eye" }),
-    Misc = Window:AddTab({ Title = "⚙️ Misc", Icon = "settings" }),
+    Combat = Window:AddTab({ Title = "Combat", Icon = "sword" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "user" }),
+    Visual = Window:AddTab({ Title = "Visual", Icon = "eye" }),
+    Misc = Window:AddTab({ Title = "Misc", Icon = "settings" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "cog" })
 }
 
@@ -507,7 +500,7 @@ Log("Script loaded", "success")
 
 -- COMBAT TAB
 Tabs.Combat:AddParagraph({
-    Title = "🎯 Aimbot",
+    Title = "Aimbot",
     Content = "Hold RIGHT MOUSE to aim"
 })
 
@@ -621,7 +614,7 @@ Tabs.Combat:AddSlider("Smoothing", {
 -- REST OF TABS (Player, Visual, Misc, Settings) - KEEPING SAME AS BEFORE BUT I'll add complete code
 
 Tabs.Player:AddParagraph({
-    Title = "🏃 Movement",
+    Title = "Movement",
     Content = "Movement enhancements"
 })
 
@@ -829,7 +822,7 @@ Tabs.Player:AddToggle("GodMode", {
 
 -- VISUAL TAB
 Tabs.Visual:AddParagraph({
-    Title = "👁️ ESP",
+    Title = "ESP",
     Content = "See players through walls"
 })
 
