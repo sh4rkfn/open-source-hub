@@ -6,15 +6,6 @@
  --+TRUST ME BRO
 
 
---[[
-    ╦  ╦╔═╗═╗ ╦╦ ╦  ╦ ╦╦ ╦╔╗ 
-    ╚╗╔╝║ ║╔╩╦╝╚╦╝  ╠═╣║ ║╠╩╗
-     ╚╝ ╚═╝╩ ╚═ ╩   ╩ ╩╚═╝╚═╝
-    
-    Universal Script Hub - FULLY FIXED
-    Version: 3.3
-    All Features Working
-]]
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
